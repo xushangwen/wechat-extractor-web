@@ -131,7 +131,13 @@ app.get('/api/download/:taskId', (req, res) => {
   archive.finalize();
 });
 
-app.listen(PORT, () => {
-  console.log(`\n🚀 微信文章提取器已启动`);
-  console.log(`   访问: http://localhost:${PORT}\n`);
-});
+// 本地开发环境
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`\n🚀 微信文章提取器已启动`);
+    console.log(`   访问: http://localhost:${PORT}\n`);
+  });
+}
+
+// Vercel serverless 函数导出
+export default app;

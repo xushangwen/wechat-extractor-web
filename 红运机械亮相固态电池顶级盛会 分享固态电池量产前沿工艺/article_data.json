@@ -528,47 +528,47 @@
   "analyzedImages": [
     {
       "filename": "solid_state_battery_equipment.png",
-      "description": "固态电池生产设备展示图",
+      "description": "固态电池生产设备产品展示图",
       "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSariaFKwItBvnWXeN9LWNia4ibDdb8WZtBnt4b0QcVqRo3rJsr97UzNFjtIeBMVwTs9OwFlDmF598V57Yk7ZBTNBbTUkpGhyUg9EnM/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=1"
     },
     {
-      "filename": "summit_poster.png",
+      "filename": "conference_poster.png",
       "description": "峰会标题海报",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/1pQBEujiaSaqBYE8MolBZonsXqnfxJDBrD1UWIxbEHMOCSnz35K1DJEPIibFvICMudmKFDjicyticfoHqe1xclUsNyQqfyxSOFpFuL3m3ZpR4ls/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=4"
     },
     {
-      "filename": "summit_presentation_scene.jpg",
-      "description": "峰会现场照片及演示文稿",
+      "filename": "conference_scene_display.jpg",
+      "description": "峰会现场演讲及工艺路线图展示",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/1pQBEujiaSaoqRDBCWCVrFLhdibSwW9m08qnv1J0Uw2QniaSlDZ4w2Nn7RmFgB1T42fuLNiazVQicibMxHDqaAg2kuZiaFxdxd6cTROabnfYaI2nHo/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=5"
     },
     {
-      "filename": "speaker_presentation.jpg",
-      "description": "嘉宾演讲现场照片",
+      "filename": "speaker_photo.jpg",
+      "description": "演讲嘉宾照片",
       "src": "https://mmbiz.qpic.cn/mmbiz_jpg/1pQBEujiaSapfEIIEo2lNK19NR54MXuJdJLzTc9zxrkicZYzMIfUhoJFVQEl06R6Wr2DhMRJbiaGouXkx3OorKmh8SYicP6u6FfPJdyqyriaRHUg/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=11"
     },
     {
-      "filename": "solid_state_battery_process_presentation.jpg",
-      "description": "论坛现场的演讲PPT，展示固态电池量产工艺的流程图",
+      "filename": "solid_state_battery_process_chart_jpg.jpg",
+      "description": "固态电池工艺技术流程图解",
       "src": "https://mmbiz.qpic.cn/mmbiz_jpg/1pQBEujiaSaqJsB2VG0Qk3QT1lAPl3ka3zlva8up9OOGyWxaFic5LGyUPKW1kK9yx3HJAnoaMNfwzTltlT91uE1LwfSEibibABicWypdDftejvpg/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=15"
     },
     {
-      "filename": "company_award_trophy.jpg",
-      "description": "公司获得的奖杯照片",
+      "filename": "partnership_award_trophy_jpg.jpg",
+      "description": "优秀合作伙伴奖杯照片",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/1pQBEujiaSaoVzHjgjo1z6qib4NV2uribdY6GSTUBdrraJScQxC1Ptle1dHVnib0JyY08F3uRjszxd0icAO5qWw8mM5TF7cRaPiastpmUOvvpqzIE/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=20"
     },
     {
-      "filename": "conference_attendees.jpg",
-      "description": "论坛活动现场嘉宾照片",
+      "filename": "conference_attendees_jpg.jpg",
+      "description": "会议现场参会人员照片",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/1pQBEujiaSaq5uf7ZSNsdNy94zDN54lW2JocVicgg4JVm449Ssu2RFw6NUziar3f8qRLiapN0zh8wVWmP0PnrU7XTSSibYhmbpkZOiaszP4XOc9PU/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=21"
     },
     {
-      "filename": "company_exhibition_board.png",
-      "description": "红运机械公司宣传展架，包含企业介绍、设备展示及工艺流程图",
+      "filename": "hongyun_company_display_board.png",
+      "description": "红运机械公司宣传展架，包含企业简介、设备产品及工艺流程图",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/1pQBEujiaSaqUUjSCDROujGacckD7POt7EsmpYyiaLQdiajLiab5Ey2V3ZibLGribT15ypHL6yjUffn6PibCcItAkVwZVESGLoGtJP7QQdiaW1ekJUg/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=26"
     },
     {
-      "filename": "contact_and_application_areas.png",
-      "description": "公司联系方式及应用领域展示图，包含各行业应用实景图",
+      "filename": "hongyun_contact_and_application.png",
+      "description": "公司联系方式、覆盖领域及应用场景展示图",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/P4UVzp0KkrcKiark4v1bc7K11xmQEXUSOe8Jw0rzaI8cRsEtwy29w7WQoJvA5coj1psUMDBicUIeu4rzySLic9DvQ/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=29"
     }
   ]
