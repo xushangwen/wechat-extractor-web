@@ -1,0 +1,14 @@
+{
+  "name": "wechat-article-extractor",
+  "version": "1.0.0",
+  "description": "微信公众号文章抓取工具 - 提取文字、图片并保留排版",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "extract": "node index.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^24.0.0",
+    "@google/generative-ai": "^0.24.0"
+  }
+}
