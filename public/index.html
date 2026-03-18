@@ -32,7 +32,7 @@
       --log-text:       #34d399;
       --log-error:      #f87171;
       --log-dim:        #52525b;
-      --header-bg:      rgba(9,9,11,0.82);
+      --header-bg:      rgba(24,24,27,0.85);
       --shadow:         0 2px 20px rgba(0,0,0,0.35);
       --r:              14px;
       --r-sm:           9px;
@@ -60,7 +60,7 @@
       --log-text:       #34d399;
       --log-error:      #f87171;
       --log-dim:        #52525b;
-      --header-bg:      rgba(241,241,244,0.88);
+      --header-bg:      rgba(244,244,248,0.85);
       --shadow:         0 2px 12px rgba(0,0,0,0.07);
       --r:              14px;
       --r-sm:           9px;
@@ -96,13 +96,10 @@
       position: sticky; top: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 28px; height: 58px;
-      background: rgba(24,24,27,0.85);
+      background: var(--header-bg);
       backdrop-filter: blur(18px) saturate(1.5);
       -webkit-backdrop-filter: blur(18px) saturate(1.5);
       border-bottom: 1px solid var(--border);
-    }
-    [data-theme="light"] header {
-      background: rgba(244,244,248,0.85);
     }
     .logo { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; letter-spacing: -.01em; }
     .logo-mark {
