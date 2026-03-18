@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import 'dotenv/config';
 
 import { scrapeArticle } from './lib/scraper.js';
 import { downloadAllImages, analyzeImages, renameImages } from './lib/image-analyzer.js';
@@ -126,6 +127,7 @@ async function main() {
   console.log(`📄 Markdown: ${mdPath}`);
   console.log(`🖼️  保留图片: ${renamedImages.length} 张`);
   console.log('');
+  console.log(`__OUTPUT__:${JSON.stringify({ dir: outputDir, title: articleData.title })}`);
 }
 
 main().catch(err => {

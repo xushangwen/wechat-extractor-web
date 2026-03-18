@@ -527,53 +527,133 @@
   ],
   "analyzedImages": [
     {
-      "filename": "hongyun_industries_logo.png",
-      "description": "红运机械的标志，包括中文名称、英文名称及公众号信息。",
+      "filename": "img_000.png",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSaq4Qdc7RZic4EPdGnCydPNqgSicyVKbCNqvElRfqUdroMyEu0o9YSn0N2foxibDLywI1L4Diby11g5Y1SbUNyL8qiaB3obTBcAy40Xs/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=0"
     },
     {
-      "filename": "solid_state_battery_equipment.png",
-      "description": "红运机械固态电池设备展示，包含多种混合机和电极连续挤出机。",
+      "filename": "img_001.png",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSariaFKwItBvnWXeN9LWNia4ibDdb8WZtBnt4b0QcVqRo3rJsr97UzNFjtIeBMVwTs9OwFlDmF598V57Yk7ZBTNBbTUkpGhyUg9EnM/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=1"
     },
     {
-      "filename": "cassip_conference_poster.png",
-      "description": "2026中国全固态电池产学研协同创新平台年会海报。",
+      "filename": "img_003.gif",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_gif/1pQBEujiaSappO7DxjpWzePEiaNg0H8QryPYMe6h2T31XgRChcnMWLHoWg40IxtRYHduvCWOt85SWw2KZTtP7tKNzDXbWaSGrNsx0Oux685Rc/640?wx_fmt=gif&from=appmsg#imgIndex=3"
+    },
+    {
+      "filename": "img_004.png",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/1pQBEujiaSaqBYE8MolBZonsXqnfxJDBrD1UWIxbEHMOCSnz35K1DJEPIibFvICMudmKFDjicyticfoHqe1xclUsNyQqfyxSOFpFuL3m3ZpR4ls/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=4"
     },
     {
-      "filename": "conference_scene.jpg",
-      "description": "会议现场照片，演讲者正在介绍全固态电池产业规划。",
+      "filename": "img_005.jpg",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/1pQBEujiaSaoqRDBCWCVrFLhdibSwW9m08qnv1J0Uw2QniaSlDZ4w2Nn7RmFgB1T42fuLNiazVQicibMxHDqaAg2kuZiaFxdxd6cTROabnfYaI2nHo/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=5"
     },
     {
-      "filename": "speaker_forum.jpg",
-      "description": "演讲者在“中国全固态电池创新发展高峰论坛”上发言。",
+      "filename": "img_006.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSaqcPt3SX6IHXpe829aW8kBvLzic3Sc06cuvB2ZmyXqvcxpHEVLibO8polm8xahlPqmibAVmtRpN6K3vJCjgKvklOMGWjeycXR0Ny8/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=7"
+    },
+    {
+      "filename": "img_007.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/1pQBEujiaSaq0tas7AtQtPMvuCpXQ5K6QbHibPJNmTzDG3KSOPA3c8AddebExWPGNJJfZlIrPSQrjJbALRYtCEe04VtP60NXAI8Ymxu9hJia2Y/640?wx_fmt=png&from=appmsg#imgIndex=8"
+    },
+    {
+      "filename": "img_008.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSaqiaibkyyUqCNkBKs1U7J4wmBU2CFguLSOdMlcVic7mNYwjWIr8aRp0fdkvnhV4JicTVJU3qAOFo4NoeiaFaflbVZoa3GJd797bysaw/640?wx_fmt=png&from=appmsg#imgIndex=9"
+    },
+    {
+      "filename": "img_009.gif",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_gif/1pQBEujiaSapuZYOJ0HwKBkwDpEYtTKse4ROFgd0yLxCceSspeIsqdN3HR5NQY8JIUPbDariawCvSs9Bz0a3NVic2rYxrwbzsbyZ1q29sbI1vs/640?wx_fmt=gif&from=appmsg#imgIndex=10"
+    },
+    {
+      "filename": "img_010.jpg",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/mmbiz_jpg/1pQBEujiaSapfEIIEo2lNK19NR54MXuJdJLzTc9zxrkicZYzMIfUhoJFVQEl06R6Wr2DhMRJbiaGouXkx3OorKmh8SYicP6u6FfPJdyqyriaRHUg/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=11"
     },
     {
-      "filename": "forum_scene.jpg",
-      "description": "全固态电池创新发展高峰论坛现场，台上演讲者，PPT展示工艺流程。",
+      "filename": "img_011.gif",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_gif/1pQBEujiaSao5SHSFIiaNj45JbXibRiceJnAeuzw2ZibRbybnq7gbMMzOR04hhMEULwGjiaucYdn5zCpYzE6dcibLic7aLjsJHoJVXN1NAAEylaic1ibg/640?wx_fmt=gif&from=appmsg#imgIndex=12"
+    },
+    {
+      "filename": "img_012.gif",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_gif/1pQBEujiaSaqpFFD94wZGiaJwr0nmHVKj7716xmHqbsJeyic4dB3XGe4OOJN25uc4VtWXwgCpWEnl4E5Lbb9tKkqtOgRh1smLZQ3GI2ksJI8wk/640?wx_fmt=gif&from=appmsg#imgIndex=13"
+    },
+    {
+      "filename": "img_013.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/1pQBEujiaSapjdWpKguk8kaia8Ficov6mnwpl1ta1KVKyUUJviaKDTfiaFkFzmPia5n0opib8Q0S1UW28EjSDKbsNEpnQY8GTdcmZ2KA7UEHLZGPmw/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=14"
+    },
+    {
+      "filename": "img_014.jpg",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/mmbiz_jpg/1pQBEujiaSaqJsB2VG0Qk3QT1lAPl3ka3zlva8up9OOGyWxaFic5LGyUPKW1kK9yx3HJAnoaMNfwzTltlT91uE1LwfSEibibABicWypdDftejvpg/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=15"
     },
     {
-      "filename": "award_trophy.jpg",
-      "description": "江苏红运智能装备有限公司获得的优秀合作伙伴奖杯。",
+      "filename": "img_015.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSaqDiaZajlLnkBEwwbkTZLRVLnlXdKZluPMxkNiaofiavRppSL51w2cynux52QauxRmtF0RgPiaryajibP7FKh8cdY3MesFq8hJs7aww/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=16"
+    },
+    {
+      "filename": "img_016.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSarfC7LHbxUx9MxHiaRwIkOA9Eyc3rXh75jOveOGzicsL9vJLcDYOx6hiaGxfF1FkObP0ZGUl4LlvRiaztOGa2K75ovAqOf8HZQrXias/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=17"
+    },
+    {
+      "filename": "img_017.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSaobE0CKBicklJZvTteZ4AkVicFNxWyhibS5Eg6ZxAtjwslgwDpMRPiaxAfULddgdGE5BQansLIDtiavSgIjew73l61icTd7bXyHXJP3c/640?wx_fmt=png&from=appmsg#imgIndex=18"
+    },
+    {
+      "filename": "img_018.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSapupSMp2K71bibLviaRdVsibqUsTabOf8O3oh6mtdLKE7u1Oia5r6TjibbK0Ho4icbTT78SAvzxzcZ6ouhWhGAa75wEXFoBUYXsu4UIA/640?wx_fmt=png&from=appmsg#imgIndex=19"
+    },
+    {
+      "filename": "img_019.jpg",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/1pQBEujiaSaoVzHjgjo1z6qib4NV2uribdY6GSTUBdrraJScQxC1Ptle1dHVnib0JyY08F3uRjszxd0icAO5qWw8mM5TF7cRaPiastpmUOvvpqzIE/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=20"
     },
     {
-      "filename": "conference_attendees.jpg",
-      "description": "会议现场人物照片，两位男士正在认真听讲，桌上有水杯和矿泉水。",
+      "filename": "img_020.jpg",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/1pQBEujiaSaq5uf7ZSNsdNy94zDN54lW2JocVicgg4JVm449Ssu2RFw6NUziar3f8qRLiapN0zh8wVWmP0PnrU7XTSSibYhmbpkZOiaszP4XOc9PU/640?wx_fmt=jpeg&from=appmsg&watermark=1#imgIndex=21"
     },
     {
-      "filename": "hongyun_solid_state_battery.png",
-      "description": "红运机械固态电池产业化联讯海报，包含公司信息、产品展示等内容。",
+      "filename": "img_021.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSar8nZFJiaiaSAyCdkD5yarhtgEpBduEafIzeGZGUcMhpqO69kibKsX8icLI4qHrBy0s1aibsHba3d8WEJNHO0rICyibD4Yhib6vVaVJ3g/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=22"
+    },
+    {
+      "filename": "img_022.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_png/1pQBEujiaSaougH5uWBsUm3o6501MUYjGYTdPtdzrgABpGIumzxgBMDZibePuNeCKFUdRXqiclUmjTqViaaAhQCibHFxw8ur1TgOicT4EPgibKrPb0/640?wx_fmt=png&from=appmsg#imgIndex=23"
+    },
+    {
+      "filename": "img_023.png",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/1pQBEujiaSapaGfe0R8FWAX0nyibAT0BiauxllQXkibMJicB4EdT0Khjn7wPqQVKzFiaeXrtATjhq9DibbTIGhUuCaEicCqlwDT6x7omDoUsmzgcgFw/640?wx_fmt=png&from=appmsg#imgIndex=24"
+    },
+    {
+      "filename": "img_024.png",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/1pQBEujiaSaqUUjSCDROujGacckD7POt7EsmpYyiaLQdiajLiab5Ey2V3ZibLGribT15ypHL6yjUffn6PibCcItAkVwZVESGLoGtJP7QQdiaW1ekJUg/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=26"
     },
     {
-      "filename": "hongyun_company_info.png",
-      "description": "红运机械公司信息，包括地址、电话、公众号等，以及公司产品应用领域。",
+      "filename": "img_025.gif",
+      "description": "",
+      "src": "https://mmbiz.qpic.cn/mmbiz_gif/1pQBEujiaSapUI8lzOJl9tp83J73aiamt7Urdo4cXq6f4p6zVB6ic737D5Vvkov6xRdcRdOwQ5eRpoXMWgWkYPERnoB1M8DkVKGOYlCoJphloQ/640?wx_fmt=gif&from=appmsg#imgIndex=28"
+    },
+    {
+      "filename": "img_026.png",
+      "description": "",
       "src": "https://mmbiz.qpic.cn/sz_mmbiz_png/P4UVzp0KkrcKiark4v1bc7K11xmQEXUSOe8Jw0rzaI8cRsEtwy29w7WQoJvA5coj1psUMDBicUIeu4rzySLic9DvQ/640?wx_fmt=png&from=appmsg&watermark=1#imgIndex=29"
     }
   ]
