@@ -116,6 +116,8 @@
     .icon-btn:hover { color: var(--text); border-color: var(--border-strong); }
     .icon-btn svg { width: 15px; height: 15px; }
 
+    .header-right { display: flex; align-items: center; gap: 8px; }
+
     /* Main */
     main {
       position: relative; z-index: 1;
@@ -472,6 +474,7 @@
     applyLang(currentLang === 'zh' ? 'en' : 'zh');
   });
 
+  // 初始化时应用语言（必须在 DOM 元素定义后）
   applyLang(currentLang);
 
   // ── DOM refs ─────────────────────────────────────
