@@ -66,7 +66,7 @@
       --r-sm:           9px;
     }
 
-    html, body { height: 100%; }
+    html { height: 100%; }
 
     body {
       font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -74,8 +74,12 @@
       color: var(--text);
       line-height: 1.6;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
       transition: background .3s, color .3s;
     }
+
+    main { flex: 1; }
 
     body::before {
       content: '';
@@ -431,22 +435,43 @@
     currentLang = lang;
     localStorage.setItem('lang', lang);
     const t = translations[lang];
+    
+    // Header
     document.getElementById('logoText').textContent = t.logoText;
-    document.querySelector('.badge-dot').nextSibling.textContent = ' ' + t.badge;
+    document.getElementById('langBtn').title = t.langTooltip;
+    document.getElementById('themeBtn').title = t.themeTooltip;
+    
+    // Hero section
+    const badgeText = document.querySelector('.hero-badge');
+    badgeText.innerHTML = `<span class="badge-dot"></span> ${t.badge}`;
     document.querySelector('.hero h1').textContent = t.title;
     document.querySelector('.hero p').textContent = t.subtitle;
+    
+    // Input section
     document.getElementById('urlInput').placeholder = t.placeholder;
-    if (!extractBtn.disabled) document.getElementById('extractBtn').textContent = t.extractBtn;
+    document.getElementById('extractBtn').textContent = t.extractBtn;
+    
+    // Steps
     document.getElementById('step1').innerHTML = `<span class="step-dot"></span>${t.step1}`;
     document.getElementById('step2').innerHTML = `<span class="step-dot"></span>${t.step2}`;
     document.getElementById('step3').innerHTML = `<span class="step-dot"></span>${t.step3}`;
     document.getElementById('step4').innerHTML = `<span class="step-dot"></span>${t.step4}`;
+    
+    // Download button
     const dlBtn = document.getElementById('downloadBtn');
-    const dlBtnText = dlBtn.querySelector('svg').nextSibling;
-    if (dlBtnText) dlBtnText.textContent = ' ' + t.downloadBtn;
+    dlBtn.innerHTML = `
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      ${t.downloadBtn}
+    `;
+    
+    // Tip text
     document.getElementById('tipText').textContent = t.tip;
-    document.getElementById('langBtn').title = t.langTooltip;
-    document.getElementById('themeBtn').title = t.themeTooltip;
+    
+    // Footer
     document.getElementById('footerBrand').textContent = t.footerBrand;
     document.getElementById('footerAuthor').textContent = t.footerAuthor;
     document.getElementById('footerCopyright').textContent = t.footerCopyright;
