@@ -19,9 +19,9 @@
       --text:           #fafafa;
       --text-muted:     #71717a;
       --text-dim:       #3f3f46;
-      --accent:         #818cf8;
-      --accent-grad:    linear-gradient(135deg, #6366f1, #8b5cf6);
-      --accent-glow:    rgba(129,140,248,0.14);
+      --accent:         #fb923c;
+      --accent-grad:    linear-gradient(135deg, #f97316, #ea580c);
+      --accent-glow:    rgba(251,146,60,0.14);
       --success:        #34d399;
       --success-bg:     rgba(52,211,153,0.10);
       --success-border: rgba(52,211,153,0.35);
@@ -47,9 +47,9 @@
       --text:           #09090b;
       --text-muted:     #71717a;
       --text-dim:       #d4d4d8;
-      --accent:         #6366f1;
-      --accent-grad:    linear-gradient(135deg, #6366f1, #8b5cf6);
-      --accent-glow:    rgba(99,102,241,0.12);
+      --accent:         #f97316;
+      --accent-grad:    linear-gradient(135deg, #f97316, #ea580c);
+      --accent-glow:    rgba(249,115,22,0.12);
       --success:        #059669;
       --success-bg:     rgba(5,150,105,0.08);
       --success-border: rgba(5,150,105,0.30);
@@ -130,7 +130,7 @@
       display: inline-flex; align-items: center; gap: 6px;
       padding: 4px 13px; border-radius: 100px;
       background: var(--accent-glow);
-      border: 1px solid rgba(129,140,248,.22);
+      border: 1px solid rgba(251,146,60,.22);
       font-size: 11px; font-weight: 600; color: var(--accent);
       letter-spacing: .06em; text-transform: uppercase;
       margin-bottom: 22px;
@@ -142,13 +142,13 @@
     @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:.2; } }
 
     .footer {
-      text-align: center; padding: 40px 20px 30px;
+      text-align: center; padding: 24px 20px 20px;
       border-top: 1px solid var(--border);
-      margin-top: 60px;
+      margin-top: 40px;
     }
-    .footer-brand { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-    .footer-author { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
-    .footer-copyright { font-size: 11px; color: var(--text-dim); }
+    .footer-brand { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .footer-author { font-size: 11.5px; color: var(--text-muted); margin-bottom: 3px; }
+    .footer-copyright { font-size: 10.5px; color: var(--text-dim); }
 
     .hero h1 {
       font-size: 44px; font-weight: 700;
@@ -193,10 +193,10 @@
       color: #fff; font-family: 'Space Grotesk', sans-serif;
       font-size: 14px; font-weight: 600; letter-spacing: .01em;
       cursor: pointer; white-space: nowrap;
-      box-shadow: 0 2px 14px rgba(99,102,241,.38);
+      box-shadow: 0 2px 14px rgba(249,115,22,.38);
       transition: opacity .2s, transform .1s, box-shadow .2s;
     }
-    .extract-btn:hover:not(:disabled) { opacity: .88; box-shadow: 0 4px 22px rgba(99,102,241,.55); }
+    .extract-btn:hover:not(:disabled) { opacity: .88; box-shadow: 0 4px 22px rgba(249,115,22,.55); }
     .extract-btn:active:not(:disabled) { transform: scale(.97); }
     .extract-btn:disabled { opacity: .42; cursor: not-allowed; box-shadow: none; }
 
@@ -211,7 +211,7 @@
       transition: all .25s;
     }
     .step-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
-    .step.active { background: var(--accent-glow); border-color: rgba(129,140,248,.4); color: var(--accent); }
+    .step.active { background: var(--accent-glow); border-color: rgba(251,146,60,.4); color: var(--accent); }
     .step.active .step-dot { animation: pulse-dot 1.4s infinite; }
     @keyframes pulse-dot { 0%,100% { transform:scale(1);opacity:1; } 50% { transform:scale(.55);opacity:.3; } }
     .step.done { background: var(--success-bg); border-color: var(--success-border); color: var(--success); }
@@ -274,10 +274,10 @@
       color: #fff; font-family: 'Space Grotesk', sans-serif;
       font-size: 15px; font-weight: 600; letter-spacing: .01em;
       cursor: pointer;
-      box-shadow: 0 2px 18px rgba(99,102,241,.42);
+      box-shadow: 0 2px 18px rgba(249,115,22,.42);
       transition: opacity .2s, transform .1s, box-shadow .2s;
     }
-    .download-btn:hover { opacity: .9; box-shadow: 0 6px 30px rgba(99,102,241,.58); }
+    .download-btn:hover { opacity: .9; box-shadow: 0 6px 30px rgba(249,115,22,.58); }
     .download-btn:active { transform: scale(.99); }
     .download-btn svg { width: 18px; height: 18px; }
 
@@ -294,14 +294,14 @@
     <span id="logoText">WeChat Extractor</span>
   </div>
   <div class="header-right">
-    <button class="icon-btn" id="langBtn" title="Switch Language" aria-label="Switch language">
+    <button class="icon-btn" id="langBtn" title="切换语言" aria-label="Switch language">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="10"/>
         <line x1="2" y1="12" x2="22" y2="12"/>
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
       </svg>
     </button>
-    <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle light/dark">
+    <button class="icon-btn" id="themeBtn" title="切换主题" aria-label="Toggle light/dark">
     <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="12" cy="12" r="5"/>
       <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
@@ -323,7 +323,7 @@
       AI Powered
     </div>
     <h1>WeChat Article Extractor</h1>
-    <p>Scrape full text and images, AI filters decorative elements, downloads as Markdown + images.</p>
+    <p>One-click extraction of full article text and high-resolution images from WeChat Official Accounts. Gemini AI intelligently identifies and filters decorative elements, automatically packaging content into structured Markdown documents with complete image resources.</p>
   </section>
 
   <div class="card">
@@ -381,7 +381,7 @@
       logoText: '微信文章提取器',
       badge: 'AI 驱动',
       title: '提取微信公众号文章',
-      subtitle: '抓取全文与图片，AI 智能过滤装饰图，打包 Markdown + 图片资源',
+      subtitle: '一键抓取公众号全文与高清图片，Gemini AI 智能识别并过滤装饰性元素，自动打包为结构化 Markdown 文档与完整图片资源',
       placeholder: '粘贴微信文章链接  https://mp.weixin.qq.com/s/...',
       extractBtn: '开始提取',
       extracting: '提取中...',
@@ -393,6 +393,8 @@
       complete: '提取完成',
       failed: '提取失败',
       tip: '提取耗时 30 - 120 秒，取决于文章长度',
+      langTooltip: '切换语言',
+      themeTooltip: '切换主题',
       footerBrand: 'QY-Studio',
       footerAuthor: '作者 QiaoYa',
       footerCopyright: '© 2026 版权所有'
@@ -401,7 +403,7 @@
       logoText: 'WeChat Extractor',
       badge: 'AI Powered',
       title: 'WeChat Article Extractor',
-      subtitle: 'Scrape full text and images, AI filters decorative elements, downloads as Markdown + images.',
+      subtitle: 'One-click extraction of full article text and high-resolution images from WeChat Official Accounts. Gemini AI intelligently identifies and filters decorative elements, automatically packaging content into structured Markdown documents with complete image resources.',
       placeholder: 'Paste WeChat article link  https://mp.weixin.qq.com/s/...',
       extractBtn: 'Extract',
       extracting: 'Extracting...',
@@ -413,6 +415,8 @@
       complete: 'Extraction Complete',
       failed: 'Extraction Failed',
       tip: 'Extraction takes 30 - 120 seconds depending on article length',
+      langTooltip: 'Switch Language',
+      themeTooltip: 'Toggle Theme',
       footerBrand: 'QY-Studio',
       footerAuthor: 'Created by QiaoYa',
       footerCopyright: '© 2026 All Rights Reserved'
@@ -439,6 +443,8 @@
     const dlBtnText = dlBtn.querySelector('svg').nextSibling;
     if (dlBtnText) dlBtnText.textContent = ' ' + t.downloadBtn;
     document.getElementById('tipText').textContent = t.tip;
+    document.getElementById('langBtn').title = t.langTooltip;
+    document.getElementById('themeBtn').title = t.themeTooltip;
     document.getElementById('footerBrand').textContent = t.footerBrand;
     document.getElementById('footerAuthor').textContent = t.footerAuthor;
     document.getElementById('footerCopyright').textContent = t.footerCopyright;
