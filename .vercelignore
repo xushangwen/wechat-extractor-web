@@ -1,0 +1,7 @@
+node_modules
+.env
+*.zip
+匠心传承*
+红运机械*
+.git
+.DS_Store
