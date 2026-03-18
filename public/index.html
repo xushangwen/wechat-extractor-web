@@ -120,12 +120,27 @@
     .icon-btn:hover { color: var(--text); border-color: var(--border-strong); }
     .icon-btn svg { width: 15px; height: 15px; }
 
-    .header-right { display: flex; align-items: center; gap: 8px; }
+    .header-right { display: flex; align-items: center; gap: 8px; position: relative; }
+
+    /* Custom Tooltip */
+    .custom-tooltip {
+      position: absolute; top: calc(100% + 8px); right: 0;
+      background: var(--surface); border: 1px solid var(--border-strong);
+      border-radius: var(--r-sm); padding: 6px 12px;
+      font-size: 12px; color: var(--text); white-space: nowrap;
+      box-shadow: var(--shadow);
+      opacity: 0; visibility: hidden; pointer-events: none;
+      transition: opacity .2s, visibility .2s;
+      z-index: 100;
+    }
+    .icon-btn:hover .custom-tooltip {
+      opacity: 1; visibility: visible;
+    }
 
     /* Main */
     main {
       position: relative; z-index: 1;
-      max-width: 660px; margin: 0 auto;
+      max-width: 800px; margin: 0 auto;
       padding: 52px 20px 100px;
     }
 
@@ -164,7 +179,7 @@
       background-clip: text;
       margin-bottom: 14px;
     }
-    .hero p { font-size: 15px; color: var(--text-muted); max-width: 400px; margin: 0 auto; }
+    .hero p { font-size: 15px; color: var(--text-muted); max-width: 680px; margin: 0 auto; line-height: 1.7; }
 
     /* Card */
     .card {
@@ -300,14 +315,15 @@
     <span id="logoText">WeChat Extractor</span>
   </div>
   <div class="header-right">
-    <button class="icon-btn" id="langBtn" title="切换语言" aria-label="Switch language">
+    <button class="icon-btn" id="langBtn" aria-label="Switch language">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="10"/>
         <line x1="2" y1="12" x2="22" y2="12"/>
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
       </svg>
+      <span class="custom-tooltip" id="langTooltip">切换语言</span>
     </button>
-    <button class="icon-btn" id="themeBtn" title="切换主题" aria-label="Toggle light/dark">
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle light/dark">
     <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="12" cy="12" r="5"/>
       <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
@@ -318,6 +334,7 @@
     <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
     </svg>
+    <span class="custom-tooltip" id="themeTooltip">切换主题</span>
   </button>
   </div>
 </header>
@@ -387,7 +404,8 @@
       logoText: '微信文章提取器',
       badge: 'AI 驱动',
       title: '提取微信公众号文章',
-      subtitle: '一键抓取公众号全文与高清图片，Gemini AI 智能识别并过滤装饰性元素，自动打包为结构化 Markdown 文档与完整图片资源',
+      subtitle: '一键抓取公众号全文与高清图片，Gemini AI 智能过滤装饰元素，自动打包为结构化 Markdown 文档',
+      subtitleLong: '一键抓取公众号全文与高清图片，Gemini AI 智能识别并过滤装饰性元素，自动打包为结构化 Markdown 文档与完整图片资源',
       placeholder: '粘贴微信文章链接  https://mp.weixin.qq.com/s/...',
       extractBtn: '开始提取',
       extracting: '提取中...',
@@ -409,7 +427,8 @@
       logoText: 'WeChat Extractor',
       badge: 'AI Powered',
       title: 'WeChat Article Extractor',
-      subtitle: 'One-click extraction of full article text and high-resolution images from WeChat Official Accounts. Gemini AI intelligently identifies and filters decorative elements, automatically packaging content into structured Markdown documents with complete image resources.',
+      subtitle: 'One-click extraction with AI-powered filtering, packaged as structured Markdown with images.',
+      subtitleLong: 'One-click extraction of full article text and high-resolution images from WeChat Official Accounts. Gemini AI intelligently identifies and filters decorative elements, automatically packaging content into structured Markdown documents with complete image resources.',
       placeholder: 'Paste WeChat article link  https://mp.weixin.qq.com/s/...',
       extractBtn: 'Extract',
       extracting: 'Extracting...',
@@ -438,8 +457,8 @@
     
     // Header
     document.getElementById('logoText').textContent = t.logoText;
-    document.getElementById('langBtn').title = t.langTooltip;
-    document.getElementById('themeBtn').title = t.themeTooltip;
+    document.getElementById('langTooltip').textContent = t.langTooltip;
+    document.getElementById('themeTooltip').textContent = t.themeTooltip;
     
     // Hero section
     const badgeText = document.querySelector('.hero-badge');
