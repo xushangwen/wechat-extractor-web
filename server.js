@@ -1,10 +1,15 @@
 import 'dotenv/config';
 import express from 'express';
-import { spawn } from 'child_process';
 import archiver from 'archiver';
 import path from 'path';
 import fs from 'fs';
+import fsPromises from 'fs/promises';
 import { fileURLToPath } from 'url';
+import os from 'os';
+
+import { scrapeArticle } from './lib/scraper.js';
+import { downloadAllImages, analyzeImages, renameImages } from './lib/image-analyzer.js';
+import { generateMarkdown } from './lib/markdown-generator.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -19,7 +24,19 @@ function stripAnsi(str) {
   return str.replace(/\x1b\[[0-9;]*[mGKHFJA-Z]/g, '');
 }
 
-app.get('/api/extract', (req, res) => {
+function getOutputBaseDir() {
+  // Vercel 环境只有 /tmp 可写，本地使用当前目录
+  if (process.env.VERCEL === '1') return '/tmp';
+  return __dirname;
+}
+
+function sanitizeTitle(title, fallback) {
+  return (title || fallback)
+    .replace(/[/\\:*?"<>|]/g, '_')
+    .substring(0, 60);
+}
+
+app.get('/api/extract', async (req, res) => {
   const { url } = req.query;
 
   if (!url) {
@@ -35,70 +52,101 @@ app.get('/api/extract', (req, res) => {
   const taskId = Date.now().toString();
 
   const send = (event, data) => {
-    res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
+    try { res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`); } catch {}
   };
 
   send('start', { taskId });
 
-  const child = spawn('node', ['index.js', url], {
-    cwd: __dirname,
-    env: { ...process.env },
-  });
+  // 拦截 console.log/warn/error 流式输出到 SSE
+  const origLog   = console.log.bind(console);
+  const origWarn  = console.warn.bind(console);
+  const origError = console.error.bind(console);
+
+  const patchConsole = () => {
+    console.log = (...args) => {
+      const msg = stripAnsi(args.join(' '));
+      if (msg.trim()) send('log', { message: msg });
+      origLog(...args);
+    };
+    console.warn = (...args) => {
+      const msg = stripAnsi(args.join(' '));
+      if (msg.trim()) send('log', { message: msg });
+      origWarn(...args);
+    };
+    console.error = (...args) => {
+      const msg = stripAnsi(args.join(' '));
+      if (msg.trim()) send('log', { message: msg, isError: true });
+      origError(...args);
+    };
+  };
+
+  const restoreConsole = () => {
+    console.log   = origLog;
+    console.warn  = origWarn;
+    console.error = origError;
+  };
 
   let outputDir = null;
   let articleTitle = null;
-  let stdoutBuffer = '';
 
-  child.stdout.on('data', (chunk) => {
-    stdoutBuffer += chunk.toString();
-    const lines = stdoutBuffer.split('\n');
-    stdoutBuffer = lines.pop();
+  try {
+    patchConsole();
 
-    for (const line of lines) {
-      const trimmed = line.trim();
-      if (!trimmed) continue;
+    // Step 1: 抓取文章
+    send('log', { message: '━━━ Step 1/4: 抓取文章内容 ━━━' });
+    const articleData = await scrapeArticle(url);
+    articleTitle = articleData.title;
 
-      if (trimmed.startsWith('__OUTPUT__:')) {
-        try {
-          const data = JSON.parse(trimmed.slice(11));
-          outputDir = data.dir;
-          articleTitle = data.title;
-          tasks.set(taskId, { outputDir, title: articleTitle });
-        } catch {}
-      } else {
-        send('log', { message: stripAnsi(trimmed) });
-      }
-    }
-  });
+    send('log', { message: `  📰 标题: ${articleData.title}` });
+    send('log', { message: `  ✍️  作者: ${articleData.author}` });
+    const textCount = articleData.elements.filter(e => e.type === 'text').length;
+    const imageCount = articleData.elements.filter(e => ['image','gallery','background_image'].includes(e.type)).length;
+    send('log', { message: `  📝 文本段落: ${textCount}，图片: ${imageCount}` });
+    send('log', { message: '' });
 
-  child.stderr.on('data', (chunk) => {
-    const msg = stripAnsi(chunk.toString().trim());
-    if (msg) send('log', { message: msg, isError: true });
-  });
+    // 创建输出目录（Vercel 用 /tmp）
+    const baseDir = getOutputBaseDir();
+    const dirName = sanitizeTitle(articleData.title, `article_${taskId}`);
+    outputDir = path.join(baseDir, dirName);
+    await fsPromises.mkdir(outputDir, { recursive: true });
 
-  child.on('close', (code) => {
-    if (stdoutBuffer.trim()) {
-      const trimmed = stdoutBuffer.trim();
-      if (!trimmed.startsWith('__OUTPUT__:')) {
-        send('log', { message: stripAnsi(trimmed) });
-      }
-    }
+    // Step 2: 下载图片
+    send('log', { message: '━━━ Step 2/4: 下载图片 ━━━' });
+    const downloadedImages = await downloadAllImages(articleData.elements, outputDir);
+    send('log', { message: `  ✅ 成功下载 ${downloadedImages.length} 张图片` });
+    send('log', { message: '' });
 
-    if (code === 0 && outputDir) {
-      send('complete', {
-        taskId,
-        title: articleTitle,
-        downloadUrl: `/api/download/${taskId}`,
-      });
-    } else {
-      send('error', { message: `提取失败，进程退出码 ${code}` });
-    }
+    // Step 3: AI 分析图片
+    send('log', { message: '━━━ Step 3/4: AI 分析图片 ━━━' });
+    const analyzedImages = await analyzeImages(downloadedImages, articleData.title);
+    const contentCount = analyzedImages.filter(i => !i.isDecorative).length;
+    const decorCount   = analyzedImages.filter(i => i.isDecorative).length;
+    send('log', { message: `  📊 内容图片: ${contentCount} 张，装饰图片: ${decorCount} 张` });
+    send('log', { message: '' });
+
+    // Step 4: 重命名 + 生成 Markdown
+    send('log', { message: '━━━ Step 4/4: 生成 Markdown ━━━' });
+    const renamedImages = await renameImages(analyzedImages);
+    const markdown = generateMarkdown(articleData, renamedImages);
+    const mdPath = path.join(outputDir, 'article.md');
+    await fsPromises.writeFile(mdPath, markdown, 'utf-8');
+
+    send('log', { message: `  ✅ Markdown 已生成` });
+
+    tasks.set(taskId, { outputDir, title: articleTitle });
+
+    send('complete', {
+      taskId,
+      title: articleTitle,
+      downloadUrl: `/api/download/${taskId}`,
+    });
+  } catch (err) {
+    send('error', { message: `提取失败: ${err.message}` });
+    origError('提取错误:', err);
+  } finally {
+    restoreConsole();
     res.end();
-  });
-
-  req.on('close', () => {
-    if (child.exitCode === null) child.kill();
-  });
+  }
 });
 
 app.get('/api/download/:taskId', (req, res) => {
@@ -121,23 +169,18 @@ app.get('/api/download/:taskId', (req, res) => {
   res.setHeader('Content-Disposition', `attachment; filename*=UTF-8''${encodeURIComponent(zipName)}`);
 
   const archive = archiver('zip', { zlib: { level: 6 } });
-
-  archive.on('error', (err) => {
-    console.error('打包错误:', err);
-  });
-
+  archive.on('error', (err) => { console.error('打包错误:', err); });
   archive.pipe(res);
   archive.directory(outputDir, dirName);
   archive.finalize();
 });
 
 // 本地开发环境
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.VERCEL !== '1') {
   app.listen(PORT, () => {
     console.log(`\n🚀 微信文章提取器已启动`);
     console.log(`   访问: http://localhost:${PORT}\n`);
   });
 }
 
-// Vercel serverless 函数导出
 export default app;
