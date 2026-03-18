@@ -141,6 +141,15 @@
     }
     @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:.2; } }
 
+    .footer {
+      text-align: center; padding: 40px 20px 30px;
+      border-top: 1px solid var(--border);
+      margin-top: 60px;
+    }
+    .footer-brand { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .footer-author { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+    .footer-copyright { font-size: 11px; color: var(--text-dim); }
+
     .hero h1 {
       font-size: 44px; font-weight: 700;
       letter-spacing: -.035em; line-height: 1.1;
@@ -282,9 +291,17 @@
     <div class="logo-mark">
       <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
     </div>
-    WeChat Extractor
+    <span id="logoText">WeChat Extractor</span>
   </div>
-  <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle light/dark">
+  <div class="header-right">
+    <button class="icon-btn" id="langBtn" title="Switch Language" aria-label="Switch language">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+    </button>
+    <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle light/dark">
     <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="12" cy="12" r="5"/>
       <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
@@ -296,6 +313,7 @@
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
     </svg>
   </button>
+  </div>
 </header>
 
 <main>
@@ -347,13 +365,89 @@
     </div>
   </section>
 
-  <p class="tip">Extraction takes 30 - 120 seconds depending on article length</p>
+  <p class="tip" id="tipText">Extraction takes 30 - 120 seconds depending on article length</p>
 </main>
 
+<footer class="footer">
+  <div class="footer-brand" id="footerBrand">QY-Studio</div>
+  <div class="footer-author" id="footerAuthor">Created by QiaoYa</div>
+  <div class="footer-copyright" id="footerCopyright">© 2026 All Rights Reserved</div>
+</footer>
+
 <script>
+  // ── i18n ─────────────────────────────────────────
+  const translations = {
+    zh: {
+      logoText: '微信文章提取器',
+      badge: 'AI 驱动',
+      title: '提取微信公众号文章',
+      subtitle: '抓取全文与图片，AI 智能过滤装饰图，打包 Markdown + 图片资源',
+      placeholder: '粘贴微信文章链接  https://mp.weixin.qq.com/s/...',
+      extractBtn: '开始提取',
+      extracting: '提取中...',
+      step1: '抓取内容',
+      step2: '下载图片',
+      step3: 'AI 分析',
+      step4: '生成文件',
+      downloadBtn: '下载打包文件 (.zip)',
+      complete: '提取完成',
+      failed: '提取失败',
+      tip: '提取耗时 30 - 120 秒，取决于文章长度',
+      footerBrand: 'QY-Studio',
+      footerAuthor: '作者 QiaoYa',
+      footerCopyright: '© 2026 版权所有'
+    },
+    en: {
+      logoText: 'WeChat Extractor',
+      badge: 'AI Powered',
+      title: 'WeChat Article Extractor',
+      subtitle: 'Scrape full text and images, AI filters decorative elements, downloads as Markdown + images.',
+      placeholder: 'Paste WeChat article link  https://mp.weixin.qq.com/s/...',
+      extractBtn: 'Extract',
+      extracting: 'Extracting...',
+      step1: 'Scrape Content',
+      step2: 'Download Images',
+      step3: 'AI Analysis',
+      step4: 'Generate Files',
+      downloadBtn: 'Download Package (.zip)',
+      complete: 'Extraction Complete',
+      failed: 'Extraction Failed',
+      tip: 'Extraction takes 30 - 120 seconds depending on article length',
+      footerBrand: 'QY-Studio',
+      footerAuthor: 'Created by QiaoYa',
+      footerCopyright: '© 2026 All Rights Reserved'
+    }
+  };
+
+  let currentLang = localStorage.getItem('lang') || 'en';
+
+  const applyLang = (lang) => {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    const t = translations[lang];
+    document.getElementById('logoText').textContent = t.logoText;
+    document.querySelector('.badge-dot').nextSibling.textContent = ' ' + t.badge;
+    document.querySelector('.hero h1').textContent = t.title;
+    document.querySelector('.hero p').textContent = t.subtitle;
+    document.getElementById('urlInput').placeholder = t.placeholder;
+    if (!extractBtn.disabled) document.getElementById('extractBtn').textContent = t.extractBtn;
+    document.getElementById('step1').innerHTML = `<span class="step-dot"></span>${t.step1}`;
+    document.getElementById('step2').innerHTML = `<span class="step-dot"></span>${t.step2}`;
+    document.getElementById('step3').innerHTML = `<span class="step-dot"></span>${t.step3}`;
+    document.getElementById('step4').innerHTML = `<span class="step-dot"></span>${t.step4}`;
+    const dlBtn = document.getElementById('downloadBtn');
+    const dlBtnText = dlBtn.querySelector('svg').nextSibling;
+    if (dlBtnText) dlBtnText.textContent = ' ' + t.downloadBtn;
+    document.getElementById('tipText').textContent = t.tip;
+    document.getElementById('footerBrand').textContent = t.footerBrand;
+    document.getElementById('footerAuthor').textContent = t.footerAuthor;
+    document.getElementById('footerCopyright').textContent = t.footerCopyright;
+  };
+
   // ── Theme ────────────────────────────────────────
   const html      = document.documentElement;
   const themeBtn  = document.getElementById('themeBtn');
+  const langBtn   = document.getElementById('langBtn');
   const iconSun   = document.getElementById('iconSun');
   const iconMoon  = document.getElementById('iconMoon');
 
@@ -367,6 +461,12 @@
   themeBtn.addEventListener('click', () => {
     applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
   });
+
+  langBtn.addEventListener('click', () => {
+    applyLang(currentLang === 'zh' ? 'en' : 'zh');
+  });
+
+  applyLang(currentLang);
 
   // ── DOM refs ─────────────────────────────────────
   const urlInput      = document.getElementById('urlInput');
@@ -430,7 +530,7 @@
     resultSection.classList.remove('hidden');
     resultCard.className = 'result-card' + (ok ? '' : ' is-error');
     resultEmoji.textContent = ok ? '\u2705' : '\u274c';
-    resultStatus.textContent = ok ? 'Extraction Complete' : 'Extraction Failed';
+    resultStatus.textContent = ok ? translations[currentLang].complete : translations[currentLang].failed;
     resultTitleTx.textContent = title || '';
     if (ok && dlUrl) {
       downloadBtn.href = dlUrl;
@@ -454,7 +554,7 @@
     reset();
     logSection.classList.remove('hidden');
     extractBtn.disabled = true;
-    extractBtn.textContent = 'Extracting...';
+    extractBtn.textContent = translations[currentLang].extracting;
     appendLog('Connecting to server...', 'dim');
 
     es = new EventSource('/api/extract?url=' + encodeURIComponent(url));
@@ -474,7 +574,7 @@
       appendLog('Done!', 'dim');
       es.close(); es = null;
       extractBtn.disabled = false;
-      extractBtn.textContent = 'Extract';
+      extractBtn.textContent = translations[currentLang].extractBtn;
       showResult(true, d.title, d.downloadUrl);
     });
 
@@ -484,7 +584,7 @@
       appendLog(msg, 'error');
       if (es) { es.close(); es = null; }
       extractBtn.disabled = false;
-      extractBtn.textContent = 'Extract';
+      extractBtn.textContent = translations[currentLang].extractBtn;
       showResult(false, msg);
     });
 
@@ -493,7 +593,7 @@
         es.close();
         es = null;
         extractBtn.disabled = false;
-        extractBtn.textContent = 'Extract';
+        extractBtn.textContent = translations[currentLang].extractBtn;
       }
     };
   };

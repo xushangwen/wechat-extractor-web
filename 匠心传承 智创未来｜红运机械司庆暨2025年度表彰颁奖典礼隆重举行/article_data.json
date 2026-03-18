@@ -645,134 +645,119 @@
   ],
   "analyzedImages": [
     {
-      "filename": "hongyun_industries_logo.png",
-      "description": "红运机械的Logo，包含中文名称、英文名称和标志。",
-      "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqZWvLVBNfW1ntm3kWH3XR9lg5zqNJxWFe1wrZh6lwCRTsAk7SLlnfuCxiaBvwkNzxa3iaBrfyk4oUg7iccyk6wPZh4mbiaExVcOX7s/640?wx_fmt=png&from=appmsg#imgIndex=4"
-    },
-    {
-      "filename": "award_ceremony_poster.png",
-      "description": "活动海报：匠心传承智创未来，红运机械2025年度表彰典礼。",
+      "filename": "event_poster_png.png",
+      "description": "活动标题海报",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqY4c4KmibGzp9mjcdkRG35uB9hZr0BBwd2NzjgNgbqRqD5dvsRWic7zO6CuU354yk5shOjqM1NRsH3iahicwjH7ib9icNS2vmHlPhIq8/640?wx_fmt=png&from=appmsg#imgIndex=6"
     },
     {
-      "filename": "lion_dance_performance.png",
-      "description": "舞狮表演现场，有舞狮、锣鼓队和观众。",
+      "filename": "lion_dance_performance_png.png",
+      "description": "舞狮表演场景",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqZcX05bTicrS1aibhd74UQA7ZcjDnk1bCPsYzBCiarCiccKqWYAibnumY0a8f7PL4SnZQv8X09p5M2yznckqiacia87B7Pp4FxIDEueSY/640?wx_fmt=png&from=appmsg#imgIndex=7"
     },
     {
-      "filename": "lion_dance_indoor.png",
-      "description": "舞狮进入室内，人员正在迎接。",
+      "filename": "lobby_activity_png.png",
+      "description": "公司大厅活动现场",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqZEpRPM7ibkr3faMsr8Nv5oE5RJdOWVk3DT5623eYsJciaZJFEW9lqWSx7lv5FRyURJqN8Hpx0Kaw6OicdoaiarE4SUsnqlh5aZX6Q/640?wx_fmt=png&from=appmsg#imgIndex=8"
     },
     {
-      "filename": "lion_dance_banner.png",
-      "description": "舞狮表演，狮子身上挂着财源广进的横幅。",
+      "filename": "lion_dance_group_photo_png.png",
+      "description": "舞狮与员工合影",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqZTo0oygNSgq0YrvrZfn6SZ5c9Kqs5ghnJibtK71YicjicDr9HSz2g6yK9R7v57E3G8MPeyLcI3QaXYSUWRIziaTHfEmzuicpwht8O4/640?wx_fmt=png&from=appmsg#imgIndex=9"
     },
     {
-      "filename": "lion_dance_office.png",
-      "description": "办公室场景，两只舞狮正在表演，前方有办公桌椅。",
+      "filename": "office_lion_dance_png.png",
+      "description": "办公区舞狮巡游",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqajzSrAdpmBYFuO4ZN02zaHibz2MibuTB8vg2UpHo2Alicf1icMNciaZAWRkbuSbVFEt2bg2LNjxuzULz9PyyxfLllgCq0NIMnpmPM4/640?wx_fmt=png&from=appmsg#imgIndex=10"
     },
     {
-      "filename": "factory_lion_dance_procession.png",
-      "description": "工厂内部，一群人舞着狮子，走在队伍前方，像是庆祝活动。",
+      "filename": "workshop_activity_png.png",
+      "description": "生产车间舞狮活动",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqYHvDAY3IqKg3ic8QPzO361lZTowSJtapqZWDa44YwcBoSbBRURGib6JrDk89Siapic2PnUOiasB6kFf6aPkC0BpVPicB6yv9HF7uTc0/640?wx_fmt=png&from=appmsg#imgIndex=11"
     },
     {
-      "filename": "factory_workshop_lion_dance.png",
-      "description": "工厂车间内，舞狮队伍和员工走在一起，有大型设备。",
+      "filename": "factory_lion_dance_png.png",
+      "description": "工厂车间舞狮巡游",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqbA63B3nn2FhLDPknw86TUZmnoMBPZ6X5dezynQ7JKBWDlhiaySicsibDFvIJIbUkUBiblvyNBZ8kXIbpjbqiaNuflDQ8EObqBOia9Aw/640?wx_fmt=png&from=appmsg#imgIndex=12"
     },
     {
-      "filename": "awards_ceremony_speaker.png",
-      "description": "颁奖典礼现场，演讲者在台上发言，背景是工作汇报PPT。",
+      "filename": "employee_presentation_png.png",
+      "description": "员工在舞台上进行工作汇报",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqaFjTcjxicYZULP2K1RsgRmgkjJtHrzcClTAIicvc4NTbO8icwxmy55tjicufiacb8D0GiaviaNp33RyzzPWVRBsmibfgeLmgjiaKhbFfTo/640?wx_fmt=png&from=appmsg#imgIndex=13"
     },
     {
-      "filename": "outstanding_department_award.png",
-      "description": "年度优秀部门奖，工程部获奖者合影，手持证书和奖杯。",
+      "filename": "department_award_png.png",
+      "description": "年度杰出部门颁奖典礼现场",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqaVVRCfLwFTtBqWbSCq7N7LLzRAic3k430qOEBULHdXpb4icWA84LFkkgIFXyf5viauPJjhrcxXYFTjMwgygicqYWISWSNlBqVmKnU/640?wx_fmt=png&from=appmsg#imgIndex=14"
     },
     {
-      "filename": "innovation_star_award.png",
-      "description": "创新之星颁奖现场，获奖者手持奖金支票和证书合影。",
+      "filename": "innovation_star_award_png.png",
+      "description": "创新之星颁奖现场",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqbNuhicING09OApnZBZyouctsPDj6p4rNTBBypex9GdH837aqvhsjvOJMEaVxtVLg7hVNVjtJf14JIl13XRPgfF0naLmroOdxh4/640?wx_fmt=png&from=appmsg#imgIndex=15"
     },
     {
-      "filename": "cost_reduction_award.png",
-      "description": "降本标兵颁奖，获奖者手持奖金支票和证书合影留念。",
+      "filename": "cost_reduction_award_png.png",
+      "description": "降本标兵颁奖现场",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqbLR18hOUbJQ3ziadVpfKzYIibZos0BAjAgVFcfag2ALqr3qQNEskL9Jm0dic1TbZh7MdKTbkxFHyvbaQgSmFQRbQZL6ho6nCH1IY/640?wx_fmt=png&from=appmsg#imgIndex=16"
     },
     {
-      "filename": "35th_anniversary_award.png",
-      "description": "公司成立35周年表彰大会，获奖员工手持奖金牌合影。",
+      "filename": "group_award_ceremony_png.png",
+      "description": "集体颁奖仪式现场",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqZqshw4UlHRhYVA5nP0b6mvj2RCzbDHGSEPK6Gkye06kBkVhvH9g9Nzic7VlIZKiarJ3WbxHiayicsPfrnvUJqr5aboBqIwzCIUFLw/640?wx_fmt=png&from=appmsg#imgIndex=17"
     },
     {
-      "filename": "professional_talent_award.png",
-      "description": "颁奖典礼现场，专业能手获奖者手持奖金牌集体合影。",
+      "filename": "professional_expert_award_png.png",
+      "description": "专业能手颁奖现场",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqZ196E0jbN36Ld4hnuSmQ9Ho5lY3fZtHAS6Blc1wrXzuicPKYmbAia1RicGI3fE495X1YcjibqPLwPPIWvZQboBVd63qbF5muyYibjA/640?wx_fmt=png&from=appmsg#imgIndex=18"
     },
     {
-      "filename": "best_service_award.png",
-      "description": "最佳服务奖颁奖，获奖者手持奖金牌与领导合影留念。",
+      "filename": "best_service_award_png.png",
+      "description": "最佳服务团队颁奖现场",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqa8SCLF0Xm65NCNjg8Jzwz2qS5eq1QowEnicFVBwXI14ETmlk4H9k61Y6NjyogvfVsv8Ah8QFROXVrHrjyYB4ic2uXX91ShXYc6c/640?wx_fmt=png&from=appmsg#imgIndex=19"
     },
     {
-      "filename": "speech_stage.png",
-      "description": "舞台上，演讲者在红运机械司庆暨2025年度表彰颁奖典礼背景前发言。",
+      "filename": "leader_speech_png.png",
+      "description": "公司负责人发表讲话",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqYkdE4icql3Y3XzubEsE0oLaemOe46sN0bVHtC1U6AFOZjuNbibe3xBvKIjLicfEolYAeFkX6BcxENghkqDI3yAtKgaibWFxXdtbvQ/640?wx_fmt=png&from=appmsg#imgIndex=20"
     },
     {
-      "filename": "drum_performance.png",
-      "description": "舞台表演：一群女性在红鼓前表演，背景是马和士兵的图像。",
+      "filename": "performance_event_png.png",
+      "description": "文艺表演环节",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqYbhdXZBANKZibG9mibqkzWeppAXK7EeawnYiaaztkiaicqic3I1ywCBHFiadeMNCABhwcMI16Wz4AH20hNf8ZQdFKqjVjOJkbSx6Gic7s/640?wx_fmt=png&from=appmsg#imgIndex=21"
     },
     {
-      "filename": "singing_man.png",
-      "description": "舞台上，一位戴眼镜的男士正在唱歌，背景是书法艺术字。",
+      "filename": "employee_performance_png.png",
+      "description": "员工在舞台上进行才艺表演",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqYvIThGQmCJLGF394t1uvticFfrxECAiaHRwvibDWbQ4g0UxvYntuxeCtkcOzlKus6qIwUum2J18uiaiaxFOY0Ibg4FlSp5LjBTWtPs/640?wx_fmt=png&from=appmsg#imgIndex=22"
     },
     {
-      "filename": "singing_woman.png",
-      "description": "舞台上，一位女士正在唱歌，背景是中国国旗和梅花图案。",
+      "filename": "performance_singer.png",
+      "description": "舞台上演员演唱节目",
       "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/nEf2nLibEAqYL0K5Ig1icwflwE6XvFPmvxDg3a1COvTI26q3mxzLg2UwgLibGCpotxQU21c0eYwyw3QT0VXPGo9EOyTwbhY33NsK1THOGknqic0/640?wx_fmt=png&from=appmsg#imgIndex=23"
     },
     {
-      "filename": "speaking_man.png",
-      "description": "舞台上，一位男士在说话，背景是红色中国风的装饰图案。",
+      "filename": "event_host.png",
+      "description": "主持人在舞台上主持",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqb55xMUSqnwy2F8XFvnrf67Lrf2SDkZsSSp9bsPyBUcKvhYXc1QzAMnXTYZ7tTCytal2XEmQz6UlrYyRTS9Ul8tqVvvvvR4nXk/640?wx_fmt=png&from=appmsg#imgIndex=24"
     },
     {
-      "filename": "magic_performance.png",
-      "description": "舞台上，两位男士表演魔术，背景是红色的幕布和Magic字样。",
+      "filename": "magic_show.png",
+      "description": "魔术师在舞台上表演",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqYPLqwCLibI0iaVI8Dkquj00C5ycQyv0cklibbp7dSfIu9APAQnemr6mKXRrZyGgdrxtgr7Hs1Ab4EWz499EoDhiaBLdvmVve6dkws/640?wx_fmt=png&from=appmsg#imgIndex=25"
     },
     {
-      "filename": "group_photo.png",
-      "description": "公司员工集体合影，在舞台上站立鼓掌，场面隆重。",
+      "filename": "audience_applause.png",
+      "description": "台下观众鼓掌",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqYLWQxbPvy3U9Qjncmicbh8gdlAfHwYXujpozzNEia6PeTIiaTMp4iaiciaVeia39CV0fwWqEM41caQ1wxFm8qhPFnyaCWqY0KhST9m7Y/640?wx_fmt=png&from=appmsg#imgIndex=26"
     },
     {
-      "filename": "celebration_toast.png",
-      "description": "室内场景，人们举杯庆祝，上方悬挂着中国国旗。",
+      "filename": "toast_celebration.png",
+      "description": "现场人员举杯庆祝",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqbXFyGdZjEYmGewhjciacIyCt3AR8EYIniaibzyFyicMMEYjjFicTY1iaa9bbVHZZM3VQEy5XKWjNv1u4mJcdfSH9omy3nW2icuhocLfA/640?wx_fmt=png&from=appmsg#imgIndex=27"
     },
     {
-      "filename": "celebration_applause.png",
-      "description": "室内场景，一群人鼓掌庆祝，房间内装饰着中国国旗。",
+      "filename": "event_interaction.png",
+      "description": "活动现场热闹互动场面",
       "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqbYZ4wsic1icNKFrUMnN4KibhaTxDp01QnbNKTAgJiarTKXnJKpliaXIibWbf7YB8eBnQia7PDPGJx2lOZe5Z8Yg1ObMUiaoX5smBzpey8/640?wx_fmt=png&from=appmsg#imgIndex=28"
-    },
-    {
-      "filename": "fireworks.png",
-      "description": "夜空中绽放的烟花，色彩绚丽，庆祝活动。",
-      "src": "https://mmecoa.qpic.cn/mmecoa_png/nEf2nLibEAqa70hr9LibsbwDKtRjnZ4PhF3b9uv90UNvLZL6U62icYOsy54v2KHbBYovGicCVmkln3JdOX8jsXeFozTAn5g5wPvV26ZQbVibHlMw/640?wx_fmt=png&from=appmsg#imgIndex=29"
-    },
-    {
-      "filename": "company_info_and_products.png",
-      "description": "公司信息及产品应用领域介绍，包含公司地址、联系方式及产品示例图。",
-      "src": "https://mmecoa.qpic.cn/sz_mmecoa_png/l2owGY1gEUPOICMjib6ghkqEWPUoLrQPu4XgwjvApMjQkZTSFIbAncibkThma0qs0RswdL7ApkxDUMnM0CA8fFibg/640?wx_fmt=png&from=appmsg#imgIndex=30"
     }
   ]
 }
