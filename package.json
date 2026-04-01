@@ -10,8 +10,8 @@
     "server": "node server.js"
   },
   "dependencies": {
-    "puppeteer-core": "^24.0.0",
-    "@sparticuz/chromium": "^131.0.0",
+    "puppeteer-core": "21.5.2",
+    "@sparticuz/chromium": "119.0.2",
     "@google/generative-ai": "^0.24.0",
     "express": "^4.19.2",
     "archiver": "^7.0.1",
