@@ -12,9 +12,8 @@
 
 **2026年3月3日（正月十五），红运机械司庆暨2025年度表彰颁奖典礼在常州总部基地和广州基地同步隆重举行。公司董事长吕范乐、总经理吕柏良、副总经理付启兰、常务副总经理刘益君、研发副总经理王召群、运营副总经理韩鹏、生产副总经理高新华等公司管理团队，与全体红运家人、供应商伙伴齐聚一堂，共同庆祝这一美好时刻！**
 
-![活动标题海报](images/event_poster_png.png)
-
-**01**
+![01](images/poster_awards_ceremony.png)
+<sub>01</sub>
 
 **舞狮纳福，盛典启幕**
 
@@ -24,19 +23,23 @@
 
 舞狮巡场续写祥瑞，锣鼓喧天，瑞狮踏福而行，穿梭于厂区各处，将喜气与福运传递至每一个角落。
 
-![舞狮表演场景](images/lion_dance_performance_png.png)
+![舞狮纳福现场（右滑更多）](images/lion_dance_performance_1.png)
+<sub>舞狮纳福现场（右滑更多）</sub>
 
-![公司大厅活动现场](images/lobby_activity_png.png)
+![舞狮纳福现场（右滑更多）](images/lion_dance_lobby.png)
+<sub>舞狮纳福现场（右滑更多）</sub>
 
-![舞狮与员工合影](images/lion_dance_group_photo_png.png)
+![舞狮纳福现场（右滑更多）](images/lion_dance_scrolls.png)
+<sub>舞狮纳福现场（右滑更多）</sub>
 
-![办公区舞狮巡游](images/office_lion_dance_png.png)
+![舞狮纳福现场（右滑更多）](images/lion_dance_office.png)
+<sub>舞狮纳福现场（右滑更多）</sub>
 
-![生产车间舞狮活动](images/workshop_activity_png.png)
+![舞狮纳福现场（右滑更多）](images/lion_dance_hall_procession.png)
+<sub>舞狮纳福现场（右滑更多）</sub>
 
-![工厂车间舞狮巡游](images/factory_lion_dance_png.png)
-
-舞狮纳福现场（右滑更多）
+![舞狮纳福现场（右滑更多）](images/lion_dance_factory_tour.png)
+<sub>舞狮纳福现场（右滑更多）</sub>
 
 **02**
 
@@ -44,9 +47,8 @@
 
 庆典中，红运机械总经理吕柏良作了重要讲话，全面总结了 2025 年公司在国内外市场拓展、技术创新、保生产、保品质、保交付取得的成绩，充分肯定了红运人在过去一年取得的的成绩与付出，并对大家致以诚挚的感谢。
 
-![员工在舞台上进行工作汇报](images/employee_presentation_png.png)
-
-红运机械总经理吕柏良
+![红运机械总经理吕柏良](images/general_manager_report.png)
+<sub>红运机械总经理吕柏良</sub>
 
 红运机械始终秉承
 **“追求完美，做到极致“的价值观，聚焦管理、品质、交付，不断优化管理体系、提升运行效能，打通部门壁垒、明晰权责，推动公司高效运转。2026年公司将实施绩效激励政策、实现个人与公司利益的双向奔赴，强化人才培养与队伍建设，做到让有为者有位、让实干者出彩。坚持在开拓进取、攻坚克难，巩固传统产业优势的同时，**
@@ -54,19 +56,23 @@
 
 回望2025年，公司涌现出了大批肯担当、能实干，业绩突出的优秀部门与个人。庆典现场，公司为杰出部门、开拓先锋、创新之星等先进部门和个人隆重颁奖，以表彰先进、树立标杆，激励全体红运人再创佳绩。
 
-![年度杰出部门颁奖典礼现场](images/department_award_png.png)
+![表彰合影（右滑更多）](images/award_ceremony_engineering_dept.png)
+<sub>表彰合影（右滑更多）</sub>
 
-![创新之星颁奖现场](images/innovation_star_award_png.png)
+![表彰合影（右滑更多）](images/award_ceremony_innovation_star.png)
+<sub>表彰合影（右滑更多）</sub>
 
-![降本标兵颁奖现场](images/cost_reduction_award_png.png)
+![表彰合影（右滑更多）](images/award_ceremony_cost_reduction_model.png)
+<sub>表彰合影（右滑更多）</sub>
 
-![集体颁奖仪式现场](images/group_award_ceremony_png.png)
+![表彰合影（右滑更多）](images/award_ceremony_group_photo.png)
+<sub>表彰合影（右滑更多）</sub>
 
-![专业能手颁奖现场](images/professional_expert_award_png.png)
+![表彰合影（右滑更多）](images/award_ceremony_professional_expert.png)
+<sub>表彰合影（右滑更多）</sub>
 
-![最佳服务团队颁奖现场](images/best_service_award_png.png)
-
-表彰合影（右滑更多）
+![表彰合影（右滑更多）](images/award_ceremony_best_service.png)
+<sub>表彰合影（右滑更多）</sub>
 
 红运机械董事长吕范乐为全体员工送上祝福与寄语，希望大家始终保持一颗
 **平常心，知足常乐，踏实做事；**
@@ -74,35 +80,28 @@
 **牢记肩上的责任感，勇于担当；坚守**
 **利他原则，心怀团队，共同成就更好的红运。**
 
-![公司负责人发表讲话](images/leader_speech_png.png)
-
-红运机械董事长吕范乐发言
+![红运机械董事长吕范乐发言](images/chairman_speech.png)
+<sub>红运机械董事长吕范乐发言</sub>
 
 除了各类奖项的颁发，舞台上文艺演出轮番上演，舞台下掌声雷动，充分展现了红运家人昂扬向上的精神风貌。
 
-![文艺表演环节](images/performance_event_png.png)
+![现场演出：中华鼓魂（右滑更多）](images/performance_chinese_drums.png)
+<sub>现场演出：中华鼓魂（右滑更多）</sub>
 
-现场演出：中华鼓魂（右滑更多）
+![《你的答案》](images/performance_singing.png)
+<sub>《你的答案》</sub>
 
-![员工在舞台上进行才艺表演](images/employee_performance_png.png)
+![歌曲表演《梦驼铃》《红梅赞》](images/performance_singing_png.png)
+<sub>歌曲表演《梦驼铃》《红梅赞》</sub>
 
-《你的答案》
+![《最亲的人》](images/performance_song_most_dear_png.png)
+<sub>《最亲的人》</sub>
 
-![舞台上演员演唱节目](images/performance_singer.png)
+![魔术表演](images/performance_magic_png.png)
+<sub>魔术表演</sub>
 
-歌曲表演《梦驼铃》《红梅赞》
-
-![主持人在舞台上主持](images/event_host.png)
-
-《最亲的人》
-
-![魔术师在舞台上表演](images/magic_show.png)
-
-魔术表演
-
-![台下观众鼓掌](images/audience_applause.png)
-
-全场合影
+![全场合影](images/full_group_photo_png.png)
+<sub>全场合影</sub>
 
 **03**
 
@@ -115,8 +114,11 @@
 
 感恩全体员工同行，祝全体家人及各界朋友元宵喜乐、阖家幸福、万事顺意、马年大吉！
 
-![现场人员举杯庆祝](images/toast_celebration.png)
+![活动期间员工举杯庆祝的场景](images/celebration_toast_png.png)
+<sub>活动期间员工举杯庆祝的场景</sub>
 
-![活动现场热闹互动场面](images/event_interaction.png)
+![员工在聚会活动中欢呼鼓掌的场景](images/celebration_clapping_png.png)
+<sub>员工在聚会活动中欢呼鼓掌的场景</sub>
 
-欢聚时刻（右滑更多）
+![欢聚时刻（右滑更多）](images/fireworks_display_png.png)
+<sub>欢聚时刻（右滑更多）</sub>
